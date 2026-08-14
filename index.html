@@ -1,245 +1,1364 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjun Digital Marketing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <title>Arjun Digital Marketing | Thrissur, Kodungallur & Irinjalakuda</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fb;
-            color: #172033;
-            line-height: 1.6;
-        }
+  <meta name="description"
+    content="Digital marketing, SEO, Google Ads, social media and local SEO services for businesses across Thrissur, Kodungallur and Irinjalakuda.">
 
-        nav {
-            background: #111827;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        nav h2 {
-            color: white;
-        }
+  <style>
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        .hero {
-            padding: 100px 8%;
-            text-align: center;
-            background: linear-gradient(135deg, #172554, #2563eb);
-            color: white;
-        }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: white;
+      line-height: 1.7;
+      overflow-x: hidden;
 
-        .hero h1 {
-            font-size: 52px;
-            margin-bottom: 20px;
-        }
+      background:
+        linear-gradient(
+          -45deg,
+          #09001f,
+          #16004d,
+          #003b73,
+          #6a008a,
+          #001f3f,
+          #30004f
+        );
 
-        .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: auto;
-        }
+      background-size: 500% 500%;
+      animation: gradientMove 16s ease infinite;
+    }
 
-        .button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 14px 28px;
-            background: white;
-            color: #1d4ed8;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
+    /* =========================
+       ANIMATED BACKGROUND
+    ========================= */
 
-        section {
-            padding: 70px 8%;
-        }
+    .blob {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(25px);
+      opacity: 0.35;
+      z-index: -1;
+      pointer-events: none;
+      animation: float 9s ease-in-out infinite;
+    }
 
-        .section-title {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 40px;
-        }
+    .blob1 {
+      width: 280px;
+      height: 280px;
+      background: #00eaff;
+      top: 8%;
+      left: -100px;
+    }
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
-        }
+    .blob2 {
+      width: 330px;
+      height: 330px;
+      background: #ff00cc;
+      right: -120px;
+      top: 35%;
+      animation-delay: 2s;
+    }
 
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            text-align: center;
-        }
+    .blob3 {
+      width: 250px;
+      height: 250px;
+      background: #7c3cff;
+      bottom: 5%;
+      left: 30%;
+      animation-delay: 4s;
+    }
 
-        .card h3 {
-            margin-bottom: 12px;
-            font-size: 22px;
-        }
+    .blob4 {
+      width: 200px;
+      height: 200px;
+      background: #00ff88;
+      top: 55%;
+      left: 10%;
+      animation-delay: 6s;
+    }
 
-        .card p {
-            color: #667085;
-        }
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
 
-        .about {
-            background: white;
-            text-align: center;
-        }
+      50% {
+        background-position: 100% 50%;
+      }
 
-        .about p {
-            max-width: 750px;
-            margin: auto;
-            color: #667085;
-            font-size: 18px;
-        }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
 
-        .contact {
-            text-align: center;
-            background: #172554;
-            color: white;
-        }
+    @keyframes float {
+      0%, 100% {
+        transform: translate(0, 0) scale(1);
+      }
 
-        .contact p {
-            margin-top: 10px;
-        }
+      50% {
+        transform: translate(45px, -50px) scale(1.15);
+      }
+    }
 
-        footer {
-            background: #111827;
-            color: #aaa;
-            text-align: center;
-            padding: 25px;
-        }
+    /* =========================
+       NAVBAR
+    ========================= */
 
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 38px;
-            }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
 
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
+      padding: 18px 7%;
 
-            nav a {
-                margin: 0 8px;
-            }
-        }
-    </style>
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      background: rgba(8, 8, 30, 0.48);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+
+    nav h2 {
+      font-size: 24px;
+    }
+
+    nav h2 i {
+      color: #00eaff;
+      margin-right: 8px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #00eaff;
+      text-shadow: 0 0 15px #00eaff;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 90vh;
+      padding: 120px 8%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 950px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+
+      padding: 8px 18px;
+      margin-bottom: 25px;
+
+      border-radius: 50px;
+
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.2);
+
+      backdrop-filter: blur(15px);
+
+      color: #9befff;
+
+      animation: fadeIn 1s ease;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.1;
+      margin-bottom: 25px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #ffffff,
+          #00eaff,
+          #ff4fd8,
+          #ffffff
+        );
+
+      background-size: 300%;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      animation:
+        textColor 5s linear infinite,
+        slideUp 1s ease;
+    }
+
+    .hero h1 span {
+      display: block;
+    }
+
+    .hero p {
+      max-width: 780px;
+      margin: auto;
+
+      font-size: 20px;
+
+      color: rgba(255,255,255,0.82);
+
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero-buttons {
+      margin-top: 35px;
+    }
+
+    .button {
+      display: inline-block;
+
+      padding: 15px 30px;
+      margin: 8px;
+
+      border-radius: 50px;
+
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+
+      background:
+        linear-gradient(
+          90deg,
+          #00c6ff,
+          #7c3cff,
+          #ff00cc
+        );
+
+      background-size: 200%;
+
+      box-shadow:
+        0 0 25px rgba(0,234,255,0.3);
+
+      transition: 0.4s;
+    }
+
+    .button:hover {
+      transform: translateY(-5px) scale(1.04);
+      background-position: 100%;
+
+      box-shadow:
+        0 0 35px rgba(255,0,204,0.6);
+    }
+
+    .button-outline {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.25);
+      box-shadow: none;
+    }
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+
+      font-size: clamp(32px, 5vw, 45px);
+
+      margin-bottom: 15px;
+
+      text-shadow:
+        0 0 20px rgba(255,255,255,0.2);
+    }
+
+    .section-subtitle {
+      max-width: 750px;
+
+      margin: 0 auto 50px;
+
+      text-align: center;
+
+      color: rgba(255,255,255,0.72);
+
+      font-size: 18px;
+    }
+
+    /* =========================
+       GLASS CARDS
+    ========================= */
+
+    .glass {
+      background: rgba(255,255,255,0.09);
+
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+
+      border: 1px solid rgba(255,255,255,0.20);
+
+      box-shadow:
+        0 20px 50px rgba(0,0,0,0.22),
+        inset 0 1px 1px rgba(255,255,255,0.15);
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      max-width: 1200px;
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+      gap: 28px;
+    }
+
+    .card {
+      position: relative;
+
+      padding: 35px;
+
+      min-height: 270px;
+
+      border-radius: 25px;
+
+      background: rgba(255,255,255,0.09);
+
+      backdrop-filter: blur(20px);
+
+      border: 1px solid rgba(255,255,255,0.20);
+
+      box-shadow:
+        0 15px 40px rgba(0,0,0,0.25);
+
+      overflow: hidden;
+
+      transition: 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-12px) scale(1.02);
+
+      background: rgba(255,255,255,0.15);
+
+      box-shadow:
+        0 25px 60px rgba(0,0,0,0.35),
+        0 0 30px rgba(0,234,255,0.12);
+    }
+
+    .card i {
+      font-size: 42px;
+
+      margin-bottom: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #00eaff,
+          #ff00cc
+        );
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card h3 {
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: rgba(255,255,255,0.72);
+    }
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .intro {
+      max-width: 1000px;
+      margin: auto;
+
+      padding: 55px;
+
+      border-radius: 30px;
+
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .intro h2 span {
+      color: #00eaff;
+    }
+
+    .intro p {
+      color: rgba(255,255,255,0.78);
+      font-size: 18px;
+    }
+
+    /* =========================
+       WHY CHOOSE ME
+    ========================= */
+
+    .why-grid {
+      max-width: 1150px;
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+      gap: 25px;
+    }
+
+    .why-card {
+      padding: 32px;
+
+      border-radius: 24px;
+
+      background: rgba(255,255,255,0.08);
+
+      backdrop-filter: blur(20px);
+
+      border: 1px solid rgba(255,255,255,0.18);
+
+      transition: 0.4s;
+    }
+
+    .why-card:hover {
+      transform: translateY(-8px);
+
+      background: rgba(255,255,255,0.14);
+    }
+
+    .why-number {
+      font-size: 14px;
+
+      color: #00eaff;
+
+      margin-bottom: 15px;
+
+      font-weight: bold;
+    }
+
+    .why-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .why-card p {
+      color: rgba(255,255,255,0.70);
+    }
+
+    /* =========================
+       LOCAL MARKET
+    ========================= */
+
+    .local {
+      text-align: center;
+    }
+
+    .locations {
+      max-width: 900px;
+      margin: 40px auto;
+
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 18px;
+    }
+
+    .location {
+      padding: 15px 25px;
+
+      border-radius: 50px;
+
+      background: rgba(255,255,255,0.10);
+
+      border: 1px solid rgba(255,255,255,0.2);
+
+      backdrop-filter: blur(15px);
+
+      transition: 0.3s;
+    }
+
+    .location:hover {
+      transform: translateY(-5px);
+
+      background: rgba(0,234,255,0.14);
+
+      border-color: #00eaff;
+    }
+
+    .local-text {
+      max-width: 850px;
+      margin: auto;
+
+      color: rgba(255,255,255,0.75);
+
+      font-size: 18px;
+    }
+
+    /* =========================
+       PERSONAL BRAND
+    ========================= */
+
+    .personal {
+      max-width: 1000px;
+      margin: auto;
+
+      padding: 60px;
+
+      border-radius: 30px;
+
+      text-align: center;
+    }
+
+    .personal h2 {
+      font-size: 38px;
+      margin-bottom: 25px;
+    }
+
+    .personal h2 span {
+      color: #ff4fd8;
+    }
+
+    .personal p {
+      color: rgba(255,255,255,0.75);
+
+      font-size: 19px;
+    }
+
+    /* =========================
+       RESULTS / SERVICES STRIP
+    ========================= */
+
+    .skills {
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 15px;
+
+      margin-top: 35px;
+    }
+
+    .skill {
+      padding: 13px 22px;
+
+      border-radius: 50px;
+
+      background: rgba(255,255,255,0.09);
+
+      border: 1px solid rgba(255,255,255,0.18);
+
+      backdrop-filter: blur(15px);
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      max-width: 1050px;
+      margin: auto;
+
+      padding: 70px 40px;
+
+      text-align: center;
+
+      border-radius: 35px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(0,234,255,0.13),
+          rgba(255,0,204,0.13)
+        );
+
+      backdrop-filter: blur(25px);
+
+      border: 1px solid rgba(255,255,255,0.22);
+
+      box-shadow:
+        0 25px 60px rgba(0,0,0,0.25);
+    }
+
+    .cta h2 {
+      font-size: clamp(32px, 5vw, 48px);
+
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      max-width: 700px;
+
+      margin: auto;
+
+      color: rgba(255,255,255,0.75);
+
+      font-size: 18px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact-buttons {
+      margin-top: 25px;
+    }
+
+    .contact-button {
+      display: inline-block;
+
+      margin: 8px;
+
+      padding: 15px 28px;
+
+      border-radius: 50px;
+
+      color: white;
+
+      text-decoration: none;
+
+      background: rgba(255,255,255,0.10);
+
+      border: 1px solid rgba(255,255,255,0.20);
+
+      backdrop-filter: blur(15px);
+
+      transition: 0.3s;
+    }
+
+    .contact-button:hover {
+      transform: translateY(-5px);
+
+      background: rgba(255,255,255,0.18);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      text-align: center;
+
+      padding: 35px 20px;
+
+      background: rgba(0,0,0,0.28);
+
+      border-top: 1px solid rgba(255,255,255,0.12);
+
+      color: rgba(255,255,255,0.65);
+    }
+
+    .socials {
+      margin-bottom: 15px;
+    }
+
+    .socials a {
+      color: white;
+
+      font-size: 23px;
+
+      margin: 0 10px;
+
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #00eaff;
+
+      text-shadow:
+        0 0 15px #00eaff;
+    }
+
+    /* =========================
+       ANIMATIONS
+    ========================= */
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes textColor {
+      0% {
+        background-position: 0%;
+      }
+
+      100% {
+        background-position: 300%;
+      }
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 90px 6%;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 70px 6%;
+      }
+
+      .intro,
+      .personal,
+      .cta {
+        padding: 40px 25px;
+      }
+
+      .intro h2,
+      .personal h2 {
+        font-size: 30px;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
 
-    <nav>
-        <h2>Arjun Digital</h2>
+  <!-- Animated background -->
 
-        <div>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+  <div class="blob blob4"></div>
 
-    <section class="hero">
-        <h1>Grow Your Business Online 🚀</h1>
 
-        <p>
-            Smart digital marketing strategies to help businesses
-            reach more people, build their brand, and grow online.
-        </p>
+  <!-- NAVIGATION -->
 
-        <a href="#services" class="button">Explore Services</a>
-    </section>
+  <nav>
 
-    <section id="services">
-        <h2 class="section-title">Our Services</h2>
+    <h2>
+      <i class="fas fa-bolt"></i>
+      Arjun Digital
+    </h2>
 
-        <div class="services">
+    <div>
 
-            <div class="card">
-                <h3>📱 Social Media</h3>
-                <p>
-                    Build your presence on social media with engaging
-                    content and effective strategies.
-                </p>
-            </div>
+      <a href="#services">Services</a>
 
-            <div class="card">
-                <h3>🔎 SEO</h3>
-                <p>
-                    Improve your website's visibility and help people
-                    find your business through search engines.
-                </p>
-            </div>
+      <a href="#why">Why Me</a>
 
-            <div class="card">
-                <h3>📢 Digital Advertising</h3>
-                <p>
-                    Create targeted online advertising campaigns
-                    designed to reach the right audience.
-                </p>
-            </div>
+      <a href="#local">Local</a>
 
-            <div class="card">
-                <h3>✍️ Content Marketing</h3>
-                <p>
-                    Create useful and engaging content that attracts
-                    and connects with your audience.
-                </p>
-            </div>
+      <a href="#about">About</a>
 
-        </div>
-    </section>
+      <a href="#contact">Contact</a>
 
-    <section id="about" class="about">
-        <h2 class="section-title">About Us</h2>
+    </div>
 
-        <p>
-            We help businesses build a stronger online presence through
-            creative ideas, digital strategies, and modern marketing
-            techniques.
-        </p>
-    </section>
+  </nav>
 
-    <section id="contact" class="contact">
-        <h2 class="section-title">Let's Grow Together</h2>
 
-        <p>
-            Ready to take your online presence to the next level?
-        </p>
+  <!-- HERO -->
 
-        <a href="mailto:your@email.com" class="button">
-            Contact Us
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        <i class="fas fa-location-dot"></i>
+        Digital Marketing • Thrissur & Kerala
+      </div>
+
+      <h1>
+        I Turn Digital Presence
+        <span>Into Real Business Growth.</span>
+      </h1>
+
+      <p>
+        I help businesses build stronger brands, reach the right
+        audience, and create meaningful growth through strategic
+        digital marketing.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#contact" class="button">
+          <i class="fas fa-calendar-check"></i>
+          Book a Free Consultation
         </a>
-    </section>
 
-    <footer>
-        © 2026 Arjun Digital Marketing. All rights reserved.
-    </footer>
+        <a href="#services" class="button button-outline">
+          Explore My Services
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+
+  <section>
+
+    <div class="intro glass">
+
+      <h2>
+        Your Business Deserves
+        <span>a Digital Strategy.</span>
+      </h2>
+
+      <p>
+        Every business has different goals, audiences, competitors,
+        and challenges. Your marketing strategy should reflect your
+        business — not follow a one-size-fits-all formula.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section id="services">
+
+    <h2 class="section-title">
+      Digital Marketing Services
+    </h2>
+
+    <p class="section-subtitle">
+      Strategic digital solutions designed to help businesses
+      build visibility, attract customers, and grow online.
+    </p>
+
+    <div class="services">
+
+      <div class="card">
+
+        <i class="fab fa-instagram"></i>
+
+        <h3>Social Media Marketing</h3>
+
+        <p>
+          Build a recognizable social presence with content and
+          strategies designed around your audience.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <i class="fas fa-magnifying-glass-chart"></i>
+
+        <h3>SEO</h3>
+
+        <p>
+          Improve your search visibility and help potential
+          customers discover your business.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <i class="fab fa-google"></i>
+
+        <h3>Google Ads</h3>
+
+        <p>
+          Reach people actively searching for products and
+          services through targeted advertising.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <i class="fas fa-location-dot"></i>
+
+        <h3>Local SEO</h3>
+
+        <p>
+          Strengthen your local visibility and make it easier
+          for nearby customers to find your business.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <i class="fas fa-pen-nib"></i>
+
+        <h3>Content Marketing</h3>
+
+        <p>
+          Create valuable content that builds attention,
+          credibility, and trust with your audience.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <i class="fas fa-chart-line"></i>
+
+        <h3>Digital Strategy</h3>
+
+        <p>
+          Develop a clear digital marketing direction based
+          on your business goals and market.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY CHOOSE ME -->
+
+  <section id="why">
+
+    <h2 class="section-title">
+      Why Choose Me?
+    </h2>
+
+    <p class="section-subtitle">
+      Marketing should be strategic, measurable, and built
+      around your actual business.
+    </p>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+
+        <div class="why-number">01 — STRATEGY</div>
+
+        <h3>
+          Strategy Built Around Your Business
+        </h3>
+
+        <p>
+          Every business has different goals, audiences,
+          competitors, and challenges. Your marketing strategy
+          should reflect that.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-number">02 — DATA</div>
+
+        <h3>
+          Data-Driven Marketing
+        </h3>
+
+        <p>
+          I use performance data and analytics to understand
+          what is working and where improvements can be made.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-number">03 — LOCAL</div>
+
+        <h3>
+          Local Market Focus
+        </h3>
+
+        <p>
+          I help businesses target customers across Kodungallur,
+          Irinjalakuda, Thrissur, and surrounding areas.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-number">04 — CUSTOM</div>
+
+        <h3>
+          Customized Solutions
+        </h3>
+
+        <p>
+          Instead of using a one-size-fits-all approach,
+          I develop strategies based on your specific
+          business requirements.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-number">05 — OPTIMIZATION</div>
+
+        <h3>
+          Continuous Optimization
+        </h3>
+
+        <p>
+          Digital marketing changes constantly. Campaigns
+          and strategies need ongoing analysis and improvement.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LOCAL MARKET -->
+
+  <section id="local" class="local">
+
+    <h2 class="section-title">
+      Digital Marketing Expert in Thrissur
+    </h2>
+
+    <p class="section-subtitle">
+      Helping Businesses Across Thrissur, Kodungallur
+      & Irinjalakuda
+    </p>
+
+    <div class="locations">
+
+      <div class="location">
+        <i class="fas fa-location-dot"></i>
+        Kodungallur
+      </div>
+
+      <div class="location">
+        <i class="fas fa-location-dot"></i>
+        Irinjalakuda
+      </div>
+
+      <div class="location">
+        <i class="fas fa-location-dot"></i>
+        Thrissur
+      </div>
+
+      <div class="location">
+        <i class="fas fa-location-dot"></i>
+        Surrounding Areas
+      </div>
+
+    </div>
+
+    <p class="local-text">
+
+      From local businesses to growing companies, I create
+      digital strategies designed around specific business
+      objectives.
+
+      <br><br>
+
+      If you're comparing digital marketing professionals
+      in Thrissur, don't look only at claims and rankings.
+
+      Look for someone who understands your business,
+      communicates clearly, studies your market, measures
+      performance, and continuously improves the strategy.
+
+    </p>
+
+  </section>
+
+
+  <!-- PERSONAL BRAND -->
+
+  <section id="about">
+
+    <div class="personal glass">
+
+      <h2>
+        I Don't Just Market Businesses.
+        <span>I Build Digital Growth Strategies.</span>
+      </h2>
+
+      <p>
+
+        Every business has a unique story.
+
+        I turn that story into a strategic online presence
+        designed to attract attention, build trust, and
+        create opportunities.
+
+      </p>
+
+      <div class="skills">
+
+        <div class="skill">
+          <i class="fas fa-chart-line"></i>
+          Digital Marketing
+        </div>
+
+        <div class="skill">
+          <i class="fas fa-search"></i>
+          SEO
+        </div>
+
+        <div class="skill">
+          <i class="fab fa-google"></i>
+          Google Ads
+        </div>
+
+        <div class="skill">
+          <i class="fab fa-instagram"></i>
+          Social Media
+        </div>
+
+        <div class="skill">
+          <i class="fas fa-location-dot"></i>
+          Local SEO
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BIG CTA -->
+
+  <section>
+
+    <div class="cta">
+
+      <h2>
+        Ready to Grow Your Business Online?
+      </h2>
+
+      <p>
+
+        Let's build a digital marketing strategy that works
+        for your business.
+
+        Get personalized guidance and discover the
+        opportunities available for your business online.
+
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#contact" class="button">
+
+          <i class="fas fa-calendar-check"></i>
+
+          Book a Free Consultation
+
+        </a>
+
+        <a
+          href="https://wa.me/91XXXXXXXXXX"
+          class="button button-outline">
+
+          <i class="fab fa-whatsapp"></i>
+
+          WhatsApp Me Today
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="contact">
+
+    <h2 class="section-title">
+      Let's Build Something Great
+    </h2>
+
+    <p class="section-subtitle">
+
+      Have a business you want to grow online?
+      Let's start with a conversation.
+
+    </p>
+
+    <div class="contact-buttons">
+
+      <!-- Replace the email below -->
+
+      <a
+        class="contact-button"
+        href="mailto:your@email.com">
+
+        <i class="fas fa-envelope"></i>
+
+        Email Me
+
+      </a>
+
+
+      <!-- Replace the phone number -->
+
+      <a
+        class="contact-button"
+        href="tel:+91XXXXXXXXXX">
+
+        <i class="fas fa-phone"></i>
+
+        Call Me
+
+      </a>
+
+
+      <!-- Replace XXXXX with your WhatsApp number -->
+
+      <a
+        class="contact-button"
+        href="https://wa.me/91XXXXXXXXXX">
+
+        <i class="fab fa-whatsapp"></i>
+
+        WhatsApp
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="socials">
+
+      <!-- Replace # with your actual social links -->
+
+      <a href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="#">
+        <i class="fab fa-facebook"></i>
+      </a>
+
+      <a href="#">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+    </div>
+
+    <p>
+      © 2026 Arjun Digital Marketing.
+      All rights reserved.
+    </p>
+
+    <p>
+      Digital Marketing | SEO | Google Ads |
+      Social Media | Local SEO
+    </p>
+
+  </footer>
+
 
 </body>
 </html>
