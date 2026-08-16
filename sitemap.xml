@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  This site is a single HTML page — /about/, /services/, /work/, /reviews/,
+  and /contact/ are client-side scroll routes (same index.html, not separate
+  crawlable pages), so only the real page is listed here. Listing the fake
+  sub-paths would create duplicate-content noise for Google, not help it.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://arjuunks.github.io/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
